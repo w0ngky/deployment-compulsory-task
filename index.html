@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .product-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Add custom styling for the SALE heading */
+        .sale-heading {
+            text-align: center;
+            margin-top: 20px;
+            color: red; /* Red color for visibility */
+            font-size: 70px; /* Large font size */
+            font-weight: bold; /* Bold text */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sale-heading">SALE</h1>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Repeat this block for each product -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/1.webp" alt="Cat Food package" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Cat Food</h5>
+                        <p class="card-text">R169.95</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/2.jpg" alt="Box of washing powder" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Washing Powder</h5>
+                        <p class="card-text">R52.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/3.png" alt="Roll of rubbish bags" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Rubbish Bags</h5>
+                        <p class="card-text">R35.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/4.jpg" alt="Dishwashing liquid bottle" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Dishwashing Liquid</h5>
+                        <p class="card-text">R32.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/5.jpg" alt="Pack of Oreo cookies" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Oreo</h5>
+                        <p class="card-text">R25.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/6.jpg" alt="Bag of coffee beans" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">R165.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/7.jpg" alt="Carton of long life milk" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Long Life Milk</h5>
+                        <p class="card-text">R109.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/8.webp" alt="Dog food package" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Dog Food</h5>
+                        <p class="card-text">R149.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/9.jpg" alt="Pack of boerewors sausage" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Boerewors</h5>
+                        <p class="card-text">R69.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="products/10.png" alt="Bottle of brandy" class="card-img-top product-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Brandy</h5>
+                        <p class="card-text">R189.99</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of product blocks -->
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <form class="form-inline">
+                <label for="contactDetails" class="mr-2">Contact Us:</label>
+                <input type="text" id="contactDetails" class="form-control mr-2" placeholder="Enter contact details">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <img src="logo.png" alt="Company Logo" class="ml-3" style="height: 40px;">
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
